@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import ThemeProvider from "./components/toggleTheme/themeProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,9 +24,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className="bg-white text-black dark:bg-black dark:text-white transition-colors duration-300 fade-up">
-        {children}
+        <ThemeProvider 
+        attribute="class" 
+        defaultTheme="system"
+        enableSystem
+        disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
