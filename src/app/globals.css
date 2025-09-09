@@ -2,10 +2,24 @@
 
 :root {
 	--scroll-color: rgb(0 0 0 / var(--tw-text-opacity, 1));
+	--bg-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+	--text-color: rgb(0 0 0 / var(--tw-text-opacity, 1));
 }
+
 html.dark {
-    --scroll-color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+	--scroll-color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+	--bg-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
+	--text-color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
+
+body {
+	background-color: var(--bg-color);
+	color: var(--text-color);
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+
 @keyframes fadeUp {
 	0% {
 		opacity: 0;
