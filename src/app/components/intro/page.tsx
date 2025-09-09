@@ -44,7 +44,7 @@ export default function Intro() {
           </p>
         </div>
         <div className="scroll">
-          <a href="#projects">
+          <a href="#articles">
             <span className="scroll-btn">
               <span className="scroll-dot"></span>
             </span>
