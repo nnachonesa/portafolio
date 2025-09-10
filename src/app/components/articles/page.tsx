@@ -3,7 +3,7 @@ export default function Articles() {
   return (
     <section
       id="articles"
-      className="py-12 px-4 bg-gray-200 dark:bg-gray-900 text-black dark:text-white transition-colors duration-500"
+      className="py-12 px-4 transition-colors duration-500"
     >
       <h2 className="text-4xl font-bold text-center mb-12 drop-shadow">
         Artículos
@@ -12,7 +12,7 @@ export default function Articles() {
       <div className="max-w-3xl mx-auto space-y-4">
         <a
           href="articles/quicksort.html"
-          className="flex items-center gap-3 p-4 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition"
+          className="flex items-center gap-3 p-4 rounded-lg transition"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -24,7 +24,7 @@ export default function Articles() {
           </svg>
           <div>
             <h3 className="font-semibold">Quicksort</h3>
-            <p className="text-sm text-gray-600 dark:text-gray-400">
+            <p className="text-sm">
               Quicksort es un algoritmo de ordenamiento por comparación
               recursivo que divide una lista de entrada en dos sublistas según
               un pivote seleccionado
@@ -34,7 +34,7 @@ export default function Articles() {
 
         <a
           href="articles/fibonacci.html"
-          className="flex items-center gap-3 p-4 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition"
+          className="flex items-center gap-3 p-4 rounded-lg transition"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -46,7 +46,7 @@ export default function Articles() {
           </svg>
           <div>
             <h3 className="font-semibold">Fibonacci</h3>
-            <p className="text-sm text-gray-600 dark:text-gray-400">
+            <p className="text-sm">
               La Serie Fibonacci se define como una secuencia de números en la
               que cada número después de los dos primeros es la suma de los dos
               números anteriores.
@@ -56,7 +56,7 @@ export default function Articles() {
 
         <a
           href="articles/luhn.html"
-          className="flex items-center gap-3 p-4 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition"
+          className="flex items-center gap-3 p-4 rounded-lg transition"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -68,7 +68,7 @@ export default function Articles() {
           </svg>
           <div>
             <h3 className="font-semibold">Algoritmo de Luhn</h3>
-            <p className="text-sm text-gray-600 dark:text-gray-400">
+            <p className="text-sm">
               El algoritmo de Luhn, también conocido como la fórmula de Luhn, es
               un método de suma de verificación utilizado ampliamente para
               validar una variedad de números de identificación.

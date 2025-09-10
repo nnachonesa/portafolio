@@ -1,11 +1,12 @@
 "use client";
 import { useTheme } from "next-themes";
 
+let dark: boolean = false;
+let toggle: string = "dark";
+
 export default function ThemeToggle() {
   const { setTheme } = useTheme();
-  let dark: boolean = false;
   function toggleTheme() {
-    let toggle: string = "system";
     switch (toggle) {
       case "dark":
         toggle = "light";
@@ -16,8 +17,8 @@ export default function ThemeToggle() {
         setTheme("dark");
         break;
       default:
-        toggle = "system";
-        setTheme("system");
+        toggle = "dark";
+        setTheme("dark");
         break;
     }
   }
