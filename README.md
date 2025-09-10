@@ -8,3 +8,5 @@ todo:
 7. agregar todos los metadatos que faltan
 8. revisar si el tailwind config de verdad funciona
 9. para los proyectos que se pueden probar hacer que redireccione al apartado de live test
+
+eternal thanks to greezaaa
