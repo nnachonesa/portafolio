@@ -12,7 +12,6 @@ export default function Articles() {
       <div className="max-w-3xl mx-auto space-y-4">
         <a
           href="articles/quicksort.html"
-          className="flex items-center gap-3 p-4 rounded-lg transition"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -31,10 +30,8 @@ export default function Articles() {
             </p>
           </div>
         </a>
-
         <a
           href="articles/fibonacci.html"
-          className="flex items-center gap-3 p-4 rounded-lg transition"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -53,10 +50,8 @@ export default function Articles() {
             </p>
           </div>
         </a>
-
         <a
           href="articles/luhn.html"
-          className="flex items-center gap-3 p-4 rounded-lg transition"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
