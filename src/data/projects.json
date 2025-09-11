@@ -1,0 +1,124 @@
+{
+    "projects": [
+        {
+        "name": "Akagi",
+        "description": "Este es un proyecto en cual se reconoce la voz por medio de una libreria de python luego esta se traduce a texto, la ia lo interpreta y lo devuelve por medio de voz.",
+        "tags": [
+                "python",
+                "speechrecognition",
+                "ai",
+                "openai"
+            ],
+        "html_url": "https://github.com/nnachonesa/Akagi"
+        },
+        {
+        "name": "Vestal",
+        "description": "Bot de discord con variedad de comandos, usando sapphire como tecnologia de base para el bot.",
+        "tags": [
+                "typescript",
+                "sapphire",
+                "discord",
+                "bot"
+            ],
+        "html_url": "https://github.com/nnachonesa/Vestal"
+        },
+        {
+        "name": "Template Products",
+        "description": "Una template basica para que cualquiera pueda usar que se trata de productos que se pueden dar a vender o distinto.",
+        "tags": [
+                "typescript",
+                "ejs",
+                "express"
+            ],
+        "html_url": "https://github.com/nnachonesa/template-products",
+        "live_url": "https://nnachonesa.github.io/projects/template-products.html"
+        },
+        {
+        "name": "Ascii Generator",
+        "description": "Una pagina web que subiendo una imagen te la devuelve pero en caracteres ascii, ademas de poder variar parametros",
+        "tags": [
+                "ascii"
+            ],
+        "html_url": "https://github.com/nnachonesa/nnachonesa.github.io/blob/master/projects/ascii.html",
+        "live_url": "https://nnachonesa.github.io/projects/ascii.html"
+        },
+        {
+        "name": "cat",
+        "description": "Bot de discord que sirve para la moderacion como Yuudachi.",
+        "tags": [
+                "typescript",
+                "sapphire",
+                "discord",
+                "bot"
+            ],
+        "html_url": "https://github.com/nnachonesa/cat"
+        },
+        {
+        "name": "Yask",
+        "description": "Una cache flexible, no escalable que esta especificamente diseñada para la programacion que tenga mucho manejo de informacion y se pueda usar en cualquier contexto.",
+        "tags": [
+                "typescript",
+                "cache"
+            ],
+        "html_url": "https://github.com/nnachonesa/yask"
+        },
+        {
+        "name": "Snowflake",
+        "description": "Constructor y desconstructor de snowflakes. (id de 64 unica)",
+        "tags": [
+                "rust",
+                "binary"
+            ],
+        "html_url": "https://github.com/nnachonesa/snowflake"
+        },
+        {
+        "name": "Murasaki",
+        "description": "Un bot de whatsapp simple que envia memes sacados de reddit",
+        "tags": [
+                "typescript",
+                "whatsapp",
+                "bot"
+            ],
+        "html_url": "https://github.com/nnachonesa/Murasaki"
+        },
+        {
+        "name": "EcoMongo",
+        "description": "Una libreria para ts/js que ayuda a crear una economia simple",
+        "tags": [
+                "typescript",
+                "mongodb"
+            ],
+        "html_url": "https://github.com/nnachonesa/EcoMongo"
+        },
+        {
+        "name": "TempTasks",
+        "description": "Esta aplicación fue creada con la sencilla razón de guardar tareas temporales, su diseño es tan sencillo como rápido y fácil de aprender.",
+        "tags": [
+                "typescript",
+                "app",
+                "electron",
+                "pkg"
+            ],
+        "html_url": "https://github.com/nnachonesa/TempTasks"
+        },
+        {
+        "name": "handino",
+        "description": "El codigo fuente de una mano robotica que hice para el proyecto del cole.",
+        "tags": [
+                "arduino"
+            ],
+        "html_url": "https://github.com/nnachonesa/handino"
+        },
+        {
+        "name": "niko-openai",
+        "description": "Un bot de discord que usa gpt (davinci) para responder",
+        "tags": [
+                "javascript",
+                "ai",
+                "discord",
+                "bot"
+            ],
+        "html_url": "https://github.com/nnachonesa/niko-openai"
+        }
+    ]
+}

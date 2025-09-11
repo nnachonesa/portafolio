@@ -1,0 +1,36 @@
+{
+    "langs": [
+        {
+            "name": "Typescript",
+            "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+        },
+        {
+            "name": "Rust",
+            "src": "https://raw.githubusercontent.com/devicons/devicon/54cfe13ac10eaa1ef817a343ab0a9437eb3c2e08/icons/rust/rust-original.svg"
+        },
+        {
+            "name": "Git",
+            "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+        },
+        {
+            "name": "Bun",
+            "src": "https://raw.githubusercontent.com/devicons/devicon/54cfe13ac10eaa1ef817a343ab0a9437eb3c2e08/icons/bun/bun-original.svg"
+        },
+        {
+            "name": "Neovim",
+            "src": "https://raw.githubusercontent.com/devicons/devicon/54cfe13ac10eaa1ef817a343ab0a9437eb3c2e08/icons/neovim/neovim-original.svg"
+        },
+        {
+            "name": "NodeJS",
+            "src": "https://raw.githubusercontent.com/devicons/devicon/54cfe13ac10eaa1ef817a343ab0a9437eb3c2e08/icons/nodejs/nodejs-plain-wordmark.svg"
+        },
+        {
+            "name": "MongoDB",
+            "src": "https://raw.githubusercontent.com/devicons/devicon/54cfe13ac10eaa1ef817a343ab0a9437eb3c2e08/icons/mongodb/mongodb-original.svg"
+        },
+        {
+            "name": "Arduino",
+            "src": "https://raw.githubusercontent.com/devicons/devicon/54cfe13ac10eaa1ef817a343ab0a9437eb3c2e08/icons/arduino/arduino-original.svg"
+        }
+    ]
+}

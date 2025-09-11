@@ -1,0 +1,19 @@
+{
+    "articles": [
+        {
+            "title": "Quicksort",
+            "src": "articles/quicksort.html",
+            "desc": "Quicksort es un algoritmo de ordenamiento por comparación recursivo que divide una lista de entrada en dos sublistas según un pivote seleccionado"
+        },
+        {
+            "title": "Fibonacci",
+            "src": "articles/fibonacci.html",
+            "desc": "La Serie Fibonacci se define como una secuencia de números en la que cada número después de los dos primeros es la suma de los dos números anteriores."
+        },
+        {
+            "title": "Algoritmo de Luhn",
+            "src": "articles/luhn.html",
+            "desc": "El algoritmo de Luhn, también conocido como la fórmula de Luhn, es un método de suma de verificación utilizado ampliamente para validar una variedad de números de identificación."
+        }
+    ]
+}
