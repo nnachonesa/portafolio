@@ -1,5 +1,6 @@
 "use client";
 import { useTheme } from "next-themes";
+import Button, { ButtonStyle } from "@/app/components/Button";
 
 let dark: boolean = false;
 let toggle: string = "dark";
@@ -26,11 +27,12 @@ export default function ThemeToggle() {
     }
   }
   return (
-    <button
+    <Button
+      href="#"
+      text={dark ? "☀️" : "🌙"}
       onClick={toggleTheme}
-      className="absolute top-4 right-4 z-50 text-2xl p-2 rounded-full hover:scale-105 transition-transform"
+      style={ButtonStyle.ThemeStyle}
     >
-      {dark ? "☀️" : "🌙"}
-    </button>
+    </Button>
   );
 }
