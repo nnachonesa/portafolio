@@ -10,14 +10,17 @@ export default function ThemeToggle() {
     switch (toggle) {
       case "dark":
         toggle = "light";
+        dark = true;
         setTheme("light");
         break;
       case "light":
         toggle = "dark";
+        dark = false;
         setTheme("dark");
         break;
       default:
         toggle = "dark";
+        dark = false;
         setTheme("dark");
         break;
     }
