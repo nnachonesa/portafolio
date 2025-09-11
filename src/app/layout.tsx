@@ -1,57 +1,46 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import ThemeProvider from "./components/toggleTheme/themeProvider";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
 export const metadata: Metadata = {
-  title: "Nacho | Portafolio",
-  description: "Nacho Portafolio",
-  icons: {
-    icon: "https://avatars.githubusercontent.com/u/76927919?v=4",
-  },
-  authors: [
-    {
-      name: "nnachonesa",
-      url: "https://github.com/nnachonesa",
-    },
-  ],
-  twitter: {
-    title: "Nacho Portafolio",
-    card: "summary_large_image",
-    images: { url: "https://avatars.githubusercontent.com/u/76927919?v=4" },
+    title: "Nacho | Portafolio",
     description: "Nacho Portafolio",
-    site: "https://github.com/nnachonesa",
-  },
-  keywords: ["portafolio"]
+    icons: {
+        icon: "https://avatars.githubusercontent.com/u/76927919?v=4",
+    },
+    authors: [
+        {
+            name: "nnachonesa",
+            url: "https://github.com/nnachonesa",
+        },
+    ],
+    twitter: {
+        title: "Nacho Portafolio",
+        card: "summary_large_image",
+        images: { url: "https://avatars.githubusercontent.com/u/76927919?v=4" },
+        description: "Nacho Portafolio",
+        site: "https://github.com/nnachonesa",
+    },
+    keywords: ["portafolio"],
 };
 
 export default function RootLayout({
-  children,
+    children,
 }: Readonly<{
-  children: React.ReactNode;
+    children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en" suppressHydrationWarning>
-      <body className="bg-white text-black dark:bg-black dark:text-white transition-colors duration-300 fade-up">
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          {children}
-        </ThemeProvider>
-      </body>
-    </html>
-  );
+    return (
+        <html lang="en" suppressHydrationWarning>
+            <body className="bg-white text-black dark:bg-black dark:text-white transition-colors duration-300 fade-up">
+                <ThemeProvider
+                    attribute="class"
+                    defaultTheme="system"
+                    enableSystem
+                    disableTransitionOnChange
+                >
+                    {children}
+                </ThemeProvider>
+            </body>
+        </html>
+    );
 }

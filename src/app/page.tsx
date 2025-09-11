@@ -8,16 +8,16 @@ import Tt from "./components/toggleTheme/page";
 import ThemeProvider from "./components/toggleTheme/themeProvider";
 
 export default function Home() {
-  return (
-    <ThemeProvider attribute="data-mode">
-      <main className="relative">
-        <Tt />
-        <Intro />
-        <Projects />
-        <Articles />
-        <Skills />
-        <Footer />
-      </main>
-    </ThemeProvider>
-  );
+    return (
+        <ThemeProvider attribute="data-mode">
+            <main className="relative">
+                <Tt />
+                <Intro />
+                <Projects />
+                <Articles />
+                <Skills />
+                <Footer />
+            </main>
+        </ThemeProvider>
+    );
 }
