@@ -1,16 +1,82 @@
 @import "tailwindcss";
 
 :root {
-	--scroll-color: rgb(0 0 0 / var(--tw-text-opacity, 1));
-	--bg-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
-	--text-color: rgb(0 0 0 / var(--tw-text-opacity, 1));
+	--scroll-color: rgb(0 0 0 / 1);
+	--bg-color: rgb(255 255 255 / 1);
+	--text-color: rgb(0 0 0 / 1);
+
+	--articles-bg: rgb(229 231 235 / 1);
+	--articles-si: rgb(243 244 246 / 1);
+	--articles-hover-bg: rgb(209 213 219 / 1);
+
+	--skills-bg: rgb(229 231 235 / 1);
+	--skills-si: rgb(243 244 246 / var(--tw-bg-opacity, 1));
+	--skills-hover-bg: rgb(229 231 235 / 1);
+
+	--footer-bg: rgb(229 231 235 / 1);
 }
 
 html.dark {
-	--scroll-color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-	--bg-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
-	--text-color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+	--scroll-color: rgb(255 255 255 / 1);
+	--bg-color: rgb(0 0 0 / 1);
+	--text-color: rgb(255 255 255 / 1);
+
+	--articles-bg: rgb(17 24 39 / 1);
+	--articles-si: rgb(31 41 55 / 1);
+	--articles-hover-bg: rgb(55 65 81 / 1);
+
+	--skills-bg: rgb(17 24 39 / 1);
+	--skills-si: rgb(31 41 55 / var(--tw-bg-opacity, 1));
+	--skills-hover-bg: rgb(55 65 81 / 1);
+
+	--footer-bg: rgb(17 24 39 / 1);
 }
+
+#articles {
+	background-color: var(--articles-bg);
+	transition: background-color 0.3s ease;
+}
+
+#skills {
+	background-color: var(--skills-bg);
+	transition: background-color 0.3s ease;
+}
+
+#footer {
+	background-color: var(--footer-bg);
+	transition: background-color 0.3s ease;
+}
+
+#articles a {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+	padding: 1rem;
+	border-radius: 0.5rem;
+	background-color: var(--articles-si);
+	transition: background-color 0.3s ease;
+}
+
+#articles a:hover {
+	background-color: var(--articles-hover-bg);
+}
+
+#skills .skill {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1rem;
+	border-radius: 0.75rem;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+	background-color: var(--skills-si);
+	transition: background-color 0.3s ease;
+}
+
+#skills .skill:hover {
+	background-color: var(--skills-hover-bg);
+}
+
+
 
 body {
 	background-color: var(--bg-color);
@@ -23,7 +89,6 @@ html {
 }
 
 .note {
-	/* User selection prevention */
 	user-select: none;
 	max-width: 700px;
 	margin: 0 auto;
@@ -35,7 +100,6 @@ html {
 }
 
 .scroll {
-	/* Scroll indicator styles */
 	text-align: center;
 	color: var(--scroll-color);
 	font-weight: bold;
@@ -49,7 +113,6 @@ html {
 	opacity: 0.5;
 	transition: opacity 0.3s ease;
 
-	/* Show on large screens */
 	@media screen and (min-width: 768px) {
 		display: block;
 	}
@@ -77,7 +140,6 @@ html {
 	}
 }
 
-/* Fade up animation */
 .fade-up {
 	opacity: 0;
 	animation: fadeUp 0.8s ease-out forwards;
