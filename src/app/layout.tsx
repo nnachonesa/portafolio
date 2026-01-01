@@ -1,8 +1,13 @@
+"use client";
+
 import type { Metadata } from "next";
+import { usePathname } from "next/navigation";
 import "./globals.css";
 import ThemeProvider from "./components/toggleTheme/themeProvider";
 
-export const metadata: Metadata = {
+
+
+const metadata: Metadata = {
     title: "Nacho | Portafolio",
     description: "Nacho Portafolio",
     icons: {
@@ -32,6 +37,32 @@ export default function RootLayout({
     return (
         <html lang="en" suppressHydrationWarning>
             <body className="bg-white text-black dark:bg-black dark:text-white transition-colors duration-300 fade-up">
+                <nav className="nav-nav">
+                    <br />
+                    {IsHome() !== true && (
+                        <>
+                            <a
+                                className="rounded-xs text-xl nav-a ml-4"
+                                href="../"
+                            >
+                                ⬅ Volver
+                            </a>
+                            <span className="ml-2">|</span>
+                        </>
+                    )}
+                    <a
+                        className="rounded-xs text-xl nav-a mx-2"
+                        href="https://github.com/nnachonesa"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        🖥️ Github
+                    </a>
+
+
+                    <br />
+                    <br />
+                </nav>
                 <ThemeProvider
                     attribute="class"
                     defaultTheme="system"
@@ -43,4 +74,8 @@ export default function RootLayout({
             </body>
         </html>
     );
+}
+
+function IsHome(): boolean {
+    return usePathname() === "/" ? true : false
 }

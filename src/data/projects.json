@@ -28,7 +28,7 @@
         },
         {
             "name": "cat",
-            "description": "Bot de discord que sirve para la moderacion como Yuudachi.",
+            "description": "Bot de discord que sirve para la moderacion.",
             "tags": ["typescript", "sapphire", "discord", "bot"],
             "html_url": "https://github.com/nnachonesa/cat"
         },
