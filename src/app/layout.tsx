@@ -4,10 +4,11 @@ import type { Metadata } from "next";
 import { usePathname } from "next/navigation";
 import "./globals.css";
 import ThemeProvider from "./components/toggleTheme/themeProvider";
-
+import Button/* , { ButtonStyle } */ from "./components/Button";
 
 
 const metadata: Metadata = {
+
     title: "Nacho | Portafolio",
     description: "Nacho Portafolio",
     icons: {
@@ -26,7 +27,7 @@ const metadata: Metadata = {
         description: "Nacho Portafolio",
         site: "https://github.com/nnachonesa",
     },
-    keywords: ["portafolio"],
+    keywords: ["portafolio", "nestjs", "typescript"],
 };
 
 export default function RootLayout({
@@ -41,25 +42,47 @@ export default function RootLayout({
                     <br />
                     {IsHome() !== true && (
                         <>
-                            <a
+                            <Button
                                 className="rounded-xs text-xl nav-a ml-4"
                                 href="../"
-                            >
-                                ⬅ Volver
-                            </a>
+                                text="⬅ Volver"
+                            ></Button>
                             <span className="ml-2">|</span>
                         </>
                     )}
-                    <a
+                    <Button
                         className="rounded-xs text-xl nav-a mx-2"
                         href="https://github.com/nnachonesa"
-                        target="_blank"
-                        rel="noreferrer"
+                        // target="_blank"
+                        // rel="noreferrer"
+                        text="🖥️ Github"
+                    ></Button>
+                    <span className="">|</span>
+                    <Button
+                        href="./#projects"
+                        text="📁 Proyectos"
+                        className="rounded-xs text-xl nav-a ml-2">
+                    </Button>
+                    <span className="ml-2">|</span>
+                    <Button
+                        className="rounded-xs text-xl nav-a ml-2"
+                        href="./#skills"
+                        text="📋 Tecnologias"
+                    ></Button>
+                    {/*                  <span className="ml-2">|</span>
+                    <a
+                        className="rounded-xs text-xl nav-a ml-2"
+                        href="./#articles"
                     >
-                        🖥️ Github
-                    </a>
-
-
+                        ✍ Posts
+                    </a> */}
+                    {/* <span className="ml-2">|</span>
+                    <a
+                        className="rounded-xs text-xl nav-a ml-2"
+                        href="./projects-posts/robot-sumo.tsx"
+                    >
+                        📍 Ultimo post
+                    </a> */}
                     <br />
                     <br />
                 </nav>
