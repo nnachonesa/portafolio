@@ -1,6 +1,6 @@
-"use client";
 import { projects } from "@/data/projects.json";
 import Button from "../Button";
+import { Metadata } from "next";
 
 function ProjectCard({
     project,
