@@ -16,7 +16,7 @@ export default function Articles() {
                 {articles.map((article) => (
                     <Button
                         key={article.title}
-                        href={article.src}
+                        href={article.slug}
                         text={
                             <div className="flex items-center gap-3">
                                 <svg

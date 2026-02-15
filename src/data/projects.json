@@ -15,7 +15,7 @@
         {
             "name": "Template Products",
             "description": "Una template basica para que cualquiera pueda usar que se trata de productos que se pueden dar a vender o distinto.",
-            "tags": ["typescript", "ejs", "express"],
+            "tags": ["typescript", "express"],
             "html_url": "https://github.com/nnachonesa/template-products",
             "live_url": "https://nnachonesa.github.io/projects/template-products.html"
         },
@@ -28,7 +28,7 @@
         },
         {
             "name": "cat",
-            "description": "Bot de discord que sirve para la moderacion como Yuudachi.",
+            "description": "Bot de discord que sirve para la moderacion.",
             "tags": ["typescript", "sapphire", "discord", "bot"],
             "html_url": "https://github.com/nnachonesa/cat"
         },

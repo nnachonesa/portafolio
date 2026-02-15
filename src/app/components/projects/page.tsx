@@ -1,6 +1,6 @@
-"use client";
 import { projects } from "@/data/projects.json";
 import Button from "../Button";
+import { Metadata } from "next";
 
 function ProjectCard({
     project,
@@ -84,7 +84,7 @@ export default function Projects() {
     return (
         <section
             id="projects"
-            className="flex items-center justify-center min-h-[50vh] w-full p-4 max-w-[1920px] mx-auto my-12"
+            className="flex items-center justify-center min-h-[50vh] w-full p-4 max-w-[1920px] mx-auto"
         >
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 mt-5">
                 {projects.map((project) => (

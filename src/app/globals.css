@@ -188,7 +188,7 @@ html {
     cursor: pointer;
     display: none;
     position: absolute;
-    bottom: 1rem;
+    bottom: 4rem;
     left: 50%;
     transform: translateX(-50%);
 
@@ -221,6 +221,9 @@ html {
 
 @media screen and (min-width: 768px) {
     .scroll {
+        display: block;
+    }
+    .nav-nav {
         display: block;
     }
 }
@@ -256,4 +259,32 @@ html {
         opacity: 1;
         transform: translateY(10px);
     }
+}
+
+.nav-nav {
+    border-bottom: 1px solid #999;
+}
+
+.nav-a {
+    color: #e92e9e;
+    background: #2e1724;
+    transition: color 0.5s ease-in-out;
+    border-radius: 6px;
+    font-size: 20px;
+}
+
+.nav-a:hover {
+    color: #af2377;
+}
+
+a {
+    padding-left: 6px;
+    padding-right: 6px;
+    border-radius: 6px;
+}
+
+.nav-white {
+    color: #00FF9C;
+    background-color: #EDEDED;
+    border: #D5D5D5;
 }
