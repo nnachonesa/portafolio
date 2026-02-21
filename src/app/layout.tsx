@@ -1,6 +1,6 @@
-import "./globals.css";
-import ThemeProvider from "./components/toggleTheme/themeProvider";
-import NavClient from "./components/NavClient";
+import "@/app/globals.css";
+import ThemeProvider from "@/app/components/toggleTheme/themeProvider";
+import NavClient from "@/app/components/NavClient";
 
 export default function RootLayout({
   children,

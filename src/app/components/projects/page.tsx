@@ -1,5 +1,5 @@
 import { projects } from "@/data/projects.json";
-import Button from "../Button";
+import Button from "@/app/components/Button";
 import { Metadata } from "next";
 
 function ProjectCard({

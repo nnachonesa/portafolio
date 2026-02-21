@@ -1,10 +1,10 @@
-import Intro from "./components/intro/page";
-import Projects from "./components/projects/page";
-/* import Articles from "./components/articles/page"; */
-import Skills from "./components/skills/page";
-import Footer from "./components/footer/page";
-import Tt from "./components/toggleTheme/page";
-import ThemeProvider from "./components/toggleTheme/themeProvider";
+import Intro from "@/app/components/intro/page";
+import Projects from "@/app/components/projects/page";
+/* import Articles from "@/app/components/articles/page"; */
+import Skills from "@/app/components/skills/page";
+import Footer from "@/app/components/footer/page";
+import Tt from "@/app/components/toggleTheme/page";
+import ThemeProvider from "@/app/components/toggleTheme/themeProvider";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -20,10 +20,10 @@ export const metadata: Metadata = {
         },
     ],
     twitter: {
-        title: "Nacho Portafolio",
+        title: "El portafolio de Nacho.",
         card: "summary_large_image",
         images: { url: "https://avatars.githubusercontent.com/u/76927919?v=4" },
-        description: "Nacho Portafolio",
+        description: "El portafolio de Nacho.",
         site: "https://github.com/nnachonesa",
     },
     keywords: ["portafolio", "nestjs", "typescript"],
