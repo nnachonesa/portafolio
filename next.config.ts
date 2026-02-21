@@ -14,6 +14,14 @@ const nextConfig: NextConfig = {
     images: {
         remotePatterns: [
             new URL("https://avatars.githubusercontent.com/u/76927919?v=4"),
+            {
+                protocol:'https',
+                hostname:'https://i.pinimg.com'
+            },
+            {
+                protocol:'https',
+                hostname:'i.imgur.com'
+            }
         ],
     },
 };
