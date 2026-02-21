@@ -2,9 +2,13 @@
     "articles": [
         {
             "title": "La seguridad inexistente.",
-            "desc": "¿De verdad existe la libertad personal?",
-            "slug": "sec-pp1",
-            "img": ""
+            "desc": "¿De verdad existe la libertad personal? En este articulo hablaremos acerca de eso.",
+            "slug": "la-seguridad-inexistente",
+            "img": "https://i.imgur.com/wT4qrz4.png",
+            "tags": [
+                "seguridad",
+                "cyber"
+            ]
         }
     ]
 }
