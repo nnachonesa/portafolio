@@ -1,7 +1,7 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import Button from "./Button";
+import Button from "@/app/components/Button";
 
 export default function NavClient() {
   const isHome = usePathname() === "/";
@@ -41,10 +41,11 @@ export default function NavClient() {
       />
       <span className="ml-2">|</span>
 
-      <a className="rounded-xs text-xl nav-a ml-2" href="/last">
-        ✍ Ultimo Post
-      </a>
-
+      <Button
+        href="/blog"
+        text="✍ Blog"
+        className="rounded-xs text-xl nav-a ml-2"
+      />
       <br />
       <br />
     </nav>
