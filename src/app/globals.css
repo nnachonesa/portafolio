@@ -2,7 +2,7 @@
 
 :root {
     --scroll-color: rgb(0 0 0 / 1);
-    --bg-color: rgb(255 255 255 / 1);
+    --bg-color: rgb(229 231 235 / 1);
     --text-color: rgb(0 0 0 / 1);
 
     --articles-bg: rgb(229 231 235 / 1);
@@ -23,17 +23,17 @@ html.dark {
     --bg-color: rgb(0 0 0 / 1);
     --text-color: rgb(255 255 255 / 1);
 
-    --articles-bg: rgb(17 24 39 / 1);
+    --articles-bg: rgb(0 0 0 / 1);
     --articles-si: rgb(31 41 55 / 1);
     --articles-hover-bg: rgb(55 65 81 / 1);
 
-    --skills-bg: rgb(17 24 39 / 1);
+    --skills-bg: rgb(0, 0, 0);
     --skills-si: rgb(31 41 55 / var(--tw-bg-opacity, 1));
     --skills-hover-bg: rgb(55 65 81 / 1);
 
-    --footer-bg: rgb(17 24 39 / 1);
+    --footer-bg: rgb(0 0 0 / 1);
 
-    --projects-bg: rgb(17 24 39 / 1);
+    --projects-bg: transparent;
 }
 
 #articles {
@@ -51,8 +51,8 @@ html.dark {
     flex-direction: column;
     justify-content: space-between;
     padding: 1rem;
-    border-radius: 0.75rem;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255,255,255,0.06);
+    box-shadow: none;
     background-color: var(--articles-si);
     transition:
         background-color 0.3s ease,
@@ -61,8 +61,9 @@ html.dark {
 }
 
 #projects .project-card:hover {
+    border-color: rgba(255,255,255,0.15);
     background-color: var(--articles-hover-bg);
-    transform: translateY(-4px);
+    transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
@@ -92,8 +93,8 @@ html.dark {
     font-family: monospace;
     padding: 0.25rem 0.5rem;
     border-radius: 0.375rem;
-    border: 1px solid var(--articles-bg);
-    background-color: var(--articles-si);
+    border: 1px solid rgba(255,255,255,0.08);
+    background: transparent;
     color: var(--text-color);
     transition: background-color 0.3s ease;
 }

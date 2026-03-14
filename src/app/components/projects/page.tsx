@@ -86,7 +86,7 @@ export default function Projects() {
             id="projects"
             className="flex items-center justify-center min-h-[50vh] w-full p-4 max-w-[1920px] mx-auto"
         >
-            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 mt-5">
+            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mt-10">
                 {projects.map((project) => (
                     // @ts-expect-error si.
                     <ProjectCard key={project.name} project={project} />
