@@ -1,105 +1,54 @@
-import { articles } from "@/data/articles.json";
-import { Metadata } from "next";
-import Image from "next/image";
-import { ThemeProvider } from "next-themes";
-import Tt from "@/app/components/toggleTheme/page";
+import type { Metadata } from "next";
+import { getFormatter, getTranslations } from "next-intl/server";
 
+import PostCard from "@/components/blog/PostCard";
+import { Button } from "@/components/ui/Button";
+import { Container } from "@/components/ui/Container";
+import { Reveal } from "@/components/ui/Reveal";
+import { getAllPosts } from "@/lib/posts";
 
 export const metadata: Metadata = {
-    title: "El blog de Nacho.",
-    description: "El blog de Nacho.",
-    icons: {
-        icon: "https://avatars.githubusercontent.com/u/76927919?v=4",
-    },
-    authors: [
-        {
-            name: "nnachonesa",
-            url: "https://github.com/nnachonesa",
-        },
-    ],
-    twitter: {
-        title: "El blog de Nacho.",
-        card: "summary_large_image",
-        images: { url: "https://avatars.githubusercontent.com/u/76927919?v=4" },
-        description: "El blog de Nacho.",
-        site: "https://github.com/nnachonesa",
-    },
-    keywords: ["portafolio", "nestjs", "typescript"],
+  title: "Blog",
+  description: "Artículos de Nacho sobre programación y seguridad.",
 };
 
-function PostCard({
-    article,
-}: {
-    article: {
-        img: string;
-        title: string;
-        desc: string;
-        tags: string[];
-        slug: string;
-    };
-}) {
-    return (
-        <div
-            className="
-      p-5 w-[330px] min-h-[370px] rounded-[20px]
-      transition duration-300 hover:-translate-y-2
-      bg-[#ffffff]  shadow-lg  hover:shadow-xl border border-[#e5e5e5] dark:bg-[#1f1f1f] dark:border-[#2a2a2a] dark:shadow-[5px_5px_12px_#141414,-5px_-5px_12px_#2a2a2a]
-    "
-        >
-            <a href={`blog/${article.slug}`}>
-                <div
-                    className="
-          min-h-[170px] rounded-[15px] overflow-hidden shadow-inner dark:shadow-[inset_5px_5px_8px_#141414,inset_-5px_-5px_8px_#2a2a2a]
-        "
-                >
-                    <Image
-                        src={article.img.toString()}
-                        alt="Foto de articulo"
-                        width={10000}
-                        height={10000}
-                        className="w-full h-[170px] object-cover"
-                    />
-                </div>
+export default async function BlogPage() {
+  const t = await getTranslations("blog");
+  const format = await getFormatter();
+  const posts = getAllPosts();
 
-                <p
-                    className=" text-[18px] font-semibold mt-[15px] ml-[10px] text-[#222] dark:text-[#f1f1f1]"
-                >
-                    {article.title}
-                </p>
+  return (
+    <Container className="pt-16 pb-12 md:pt-24">
+      <header className="pb-12">
+        <h1 className="mt-4 text-4xl font-bold tracking-tight md:text-5xl">
+          {t("titleStart")}{" "}
+          <span className="bg-gradient-to-r from-grad-from to-grad-to bg-clip-text text-transparent">
+            {t("titleAccent")}.
+          </span>
+        </h1>
+      </header>
 
-                <p className="text-[15px] mt-[13px] ml-[10px] text-[#555] dark:text-[#bdbdbd]">
-                    {article.desc}
-                </p>
-                {article.tags.map((t) => (
-                    <p
-                        key={t}
-                        className="
-            text-[13px] mt-[28px] ml-[3px] text-right  inline-flex cursor-default items-center  rounded-md px-2 py-1 font-mono text-xs font-medium bg-[#f1f1f1] text-[#444] border border-[#ddd] dark:bg-[#2a2a2a]  dark:text-[#aaa]  dark:border-[#3a3a3a]
-          "
-                    >
-                        {t}
-                    </p>
-                ))}
-            </a>
+      {posts.length > 0 ? (
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {posts.map((post, index) => (
+            <Reveal key={post.slug} delay={(index % 3) * 90}>
+              <PostCard
+                post={post}
+                dateLabel={format.dateTime(new Date(`${post.date}T00:00:00`), {
+                  dateStyle: "long",
+                })}
+              />
+            </Reveal>
+          ))}
         </div>
-    );
-}
-
-export default function Blog() {
-    return (
-        <ThemeProvider attribute="data-mode">
-            <main className="relative">
-                <Tt></Tt>
-                <section
-                    className="flex items-center justify-center min-h-[50vh] w-full p-4 max-w-[1920px] mx-auto"
-                >
-                    <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 mt-5">
-                        {articles.map((article) => (
-                            <PostCard key={article.slug} article={article} />
-                        ))}
-                    </div>
-                </section>
-            </main>
-        </ThemeProvider>
-    );
+      ) : (
+        <div className="flex flex-col items-center justify-center gap-4 rounded-2xl border border-border bg-card p-10 text-center">
+          <p className="text-muted-foreground">{t("empty")}</p>
+          <Button variant="outline" href="/">
+            {t("backHome")}
+          </Button>
+        </div>
+      )}
+    </Container>
+  );
 }
