@@ -5,7 +5,6 @@ import { getLocale, getMessages } from "next-intl/server";
 import { ThemeProvider } from "next-themes";
 
 import "@/app/globals.css";
-import { Footer } from "@/components/layout/Footer";
 import { Navbar } from "@/components/layout/Navbar";
 import { SmoothScroll } from "@/components/providers/SmoothScroll";
 import { SoundProvider } from "@/components/providers/SoundProvider";
@@ -99,7 +98,6 @@ export default async function RootLayout({
                 <main id="main" className="flex-1">
                   {children}
                 </main>
-                <Footer />
               </SmoothScroll>
             </SoundProvider>
           </ThemeProvider>
