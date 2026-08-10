@@ -1,25 +1,38 @@
-# my portafolio
+## Stack
 
-my personal website - built with **next.js**, **tailwindcss** and **css**
+- Next.js 16 + Turbopack
+- React 19 + React Compiler
+- Tailwind CSS v4 (design system con tokens CSS)
+- Biome (lint + format)
+- next-themes (dark mode con `data-theme`)
+- remark + remark-html (blog en markdown)
 
-## Contributing 
-if you have any feedback about my website, feel free to open a [github issue](https://github.com/nnachonesa/portafolio/issues)
+## Blog
 
-## Development
-```bash
-npm run dev
-# or
-bun run dev
+Los posts viven en `blog/` como archivos `.md` con frontmatter:
+
+```md
+---
+title: "Título"
+description: "Descripción"
+date: "YYYY-MM-DD"
+tags: ["tag1", "tag2"]
+image: "/assets/images/cover.png"
+---
 ```
 
-## Production
-```bash
-bun run dev
+El slug se deriva del nombre del archivo. El HTML se renderiza con remark-html y se sanitiza al servirse.
+
+## Estructura
+
+```
+src/
+  app/          # rutas y layout
+  components/   # ui/, layout/, home/, blog/
+  data/         # perfil, proyectos, skills (tipados)
+  lib/          # utilitarios, posts, sonido
 ```
 
 ## Credits
-- eternal thanks to greezaaa
 
-## to-do
-- agregar coso para que escriba la gente (recomendado por nxus_dev_) (md a html com marked)
-- escribir de que trata los proyectos (robot-sumo y supercache) copiando formato viejo
+- eternal thanks to greezaaa
