@@ -1,4 +1,10 @@
-# La seguridad inexistente
+---
+title: "La seguridad inexistente."
+description: "¿De verdad existe la libertad personal? En este artículo hablaremos acerca de eso."
+date: "2026-02-08"
+tags: ["seguridad", "cyber"]
+image: "/assets/images/la-seguridad-inexistente.png"
+---
 
 No sé cómo arrancar bien este post, pero ¿alguna vez pensaste que no tenías privacidad o que te espiaban? Si tu respuesta fue un "sí", la mía también. Si fue un "no", entonces podés seguir siendo un mortal apático.
 
