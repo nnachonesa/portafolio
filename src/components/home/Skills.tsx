@@ -17,7 +17,6 @@ export async function Skills() {
             </span> }
           </>
         }
-        description={t("description")}
       />
 
       <div className="grid grid-cols-2 gap-4 md:grid-cols-4 md:gap-6 sm:grid-cols-3">
