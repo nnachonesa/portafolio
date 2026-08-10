@@ -1,0 +1,97 @@
+{
+  "nav": {
+    "inicio": "Inicio",
+    "proyectos": "Proyectos",
+    "tecnologias": "Tecnologías",
+    "blog": "Blog",
+    "github": "GitHub de Nacho",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú"
+  },
+  "hero": {
+    "role": "Desarrollador Backend",
+    "titlePrefix": "Hola, soy Nacho",
+    "paragraph1": "Estudio en una escuela técnica con orientación en electrónica, pero mi verdadera pasión es la programación, que aprendí de manera autodidacta.",
+    "paragraph2": "Me especializo en desarrollo backend: crear aplicaciones, resolver problemas y explorar cosas nuevas. Mi lenguaje preferido es TypeScript, aunque siempre estoy aprendiendo tecnologías nuevas (ahora mismo, Rust).",
+    "ctaProjects": "Ver proyectos",
+    "ctaBlog": "Leer el blog"
+  },
+  "skills": {
+    "eyebrow": "stack",
+    "titleStart": "Tecnologías",
+    "titleAccent": "",
+    "description": "Las herramientas y lenguajes que uso para construir, aprender y resolver problemas."
+  },
+  "projects": {
+    "eyebrow": "proyectos",
+    "titleStart": "Proyectos",
+    "titleAccent": "",
+    "description": "Una selección de cosas que he construido: bots, librerías, apps y experimentos.",
+    "code": "Código",
+    "demo": "Demo",
+    "items": {
+      "akagi": {
+        "description": "Reconocimiento de voz con Python que traduce a texto, la IA lo interpreta y responde con voz."
+      },
+      "vestal": {
+        "description": "Bot de Discord con variedad de comandos, basado en Sapphire."
+      },
+      "template-products": {
+        "description": "Template para vender productos, lista para usarse en cualquier contexto."
+      },
+      "ascii": {
+        "description": "Sube una imagen y recibila convertida en caracteres ASCII, con parámetros configurables."
+      },
+      "cat": {
+        "description": "Bot de Discord para moderación."
+      },
+      "yask": {
+        "description": "Cache flexible y liviana para manejo intensivo de información."
+      },
+      "snowflake": {
+        "description": "Constructor y desconstructor de snowflakes (IDs de 64 bits únicos)."
+      },
+      "murasaki": {
+        "description": "Bot de WhatsApp que envía memes sacados de Reddit."
+      },
+      "ecomongo": {
+        "description": "Librería para TS/JS que ayuda a crear una economía simple."
+      },
+      "temptasks": {
+        "description": "App de escritorio para guardar tareas temporales, simple y rápida."
+      },
+      "handino": {
+        "description": "Código fuente de una mano robótica, proyecto escolar."
+      },
+      "niko": {
+        "description": "Bot de Discord que usa GPT para responder."
+      }
+    }
+  },
+  "blog": {
+    "eyebrow": "blog",
+    "titleStart": "Bitácora de código",
+    "titleAccent": "",
+    "description": "Notas, reflexiones y escritos de Nacho sobre programación, seguridad y tecnología en general.",
+    "empty": "Todavía no hay publicaciones.",
+    "backHome": "Volver al inicio"
+  },
+  "article": {
+    "back": "Volver al blog",
+    "end": "Fin del artículo.",
+    "contactCta": "Escribime en GitHub"
+  },
+  "footer": {
+    "github": "GitHub",
+    "madeWith": "Hecho con Next.js"
+  },
+  "common": {
+    "themeLight": "Cambiar a tema claro",
+    "themeDark": "Cambiar a tema oscuro",
+    "language": "Idioma",
+    "notFoundTitle": "Esta página no existe.",
+    "notFoundDescription": "El contenido que buscás no está acá, o fue movido a otro lado de la bitácora.",
+    "backHome": "Volver al inicio",
+    "goBlog": "Ir al blog"
+  }
+}

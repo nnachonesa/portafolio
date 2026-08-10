@@ -1,0 +1,94 @@
+{
+  "nav": {
+    "inicio": "Home",
+    "proyectos": "Projects",
+    "tecnologias": "Stack",
+    "blog": "Blog",
+    "github": "Nacho's GitHub",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "hero": {
+    "titlePrefix": "Hi, I'm Nacho",
+    "paragraph1": "I study at a technical school focused on electronics, but my real passion is programming, which I learned on my own.",
+    "paragraph2": "I specialize in backend development: building apps, solving problems and exploring new things. My language of choice is TypeScript, though I'm always picking up new technologies (right now, Rust).",
+    "ctaProjects": "View projects",
+    "ctaBlog": "Read the blog"
+  },
+  "skills": {
+    "eyebrow": "stack",
+    "titleStart": "Technologies",
+    "description": "The tools and languages I use to build, learn and solve problems."
+  },
+  "projects": {
+    "eyebrow": "projects",
+    "titleStart": "Projects",
+    "description": "A selection of things I've built: bots, libraries, apps and experiments.",
+    "code": "Code",
+    "demo": "Demo",
+    "items": {
+      "akagi": {
+        "description": "Speech recognition with Python: it transcribes to text, the AI interprets it and replies with voice."
+      },
+      "vestal": {
+        "description": "Discord bot with a variety of commands, built on Sapphire."
+      },
+      "template-products": {
+        "description": "Template for selling products, ready to use in any context."
+      },
+      "ascii": {
+        "description": "Upload an image and get it back as ASCII characters, with configurable parameters."
+      },
+      "cat": {
+        "description": "Discord moderation bot."
+      },
+      "yask": {
+        "description": "Flexible, lightweight cache for heavy data handling."
+      },
+      "snowflake": {
+        "description": "Snowflake constructor and destructor (unique 64-bit IDs)."
+      },
+      "murasaki": {
+        "description": "WhatsApp bot that sends memes pulled from Reddit."
+      },
+      "ecomongo": {
+        "description": "TS/JS library to help you build a simple economy."
+      },
+      "temptasks": {
+        "description": "Desktop app to keep temporary tasks, simple and fast."
+      },
+      "handino": {
+        "description": "Source code of a robotic hand, a school project."
+      },
+      "niko": {
+        "description": "Discord bot that uses GPT to reply."
+      }
+    }
+  },
+  "blog": {
+    "eyebrow": "blog",
+    "titleStart": "Dev journal",
+    "titleAccent": "",
+    "description": "Notes, thoughts and writing from Nacho about programming, security and technology in general.",
+    "empty": "No posts yet.",
+    "backHome": "Back home"
+  },
+  "article": {
+    "back": "Back to the blog",
+    "end": "End of article.",
+    "contactCta": "Reach me on GitHub"
+  },
+  "footer": {
+    "github": "GitHub",
+    "madeWith": "Built with Next.js"
+  },
+  "common": {
+    "themeLight": "Switch to light theme",
+    "themeDark": "Switch to dark theme",
+    "language": "Language",
+    "notFoundTitle": "This page doesn't exist.",
+    "notFoundDescription": "The content you're looking for isn't here, or it moved somewhere else in the journal.",
+    "backHome": "Back home",
+    "goBlog": "Go to blog"
+  }
+}
