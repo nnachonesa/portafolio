@@ -30,20 +30,14 @@
     "code": "Código",
     "demo": "Demo",
     "items": {
+      "gtaw-es": {
+        "description": "Uma biblioteca não oficial para interagir com a API FaceBrowser do GTA World de forma simples e tipada."
+      },
       "akagi": {
         "description": "Reconhecimento de voz com Python: transcreve para texto, a IA interpreta e responde com voz."
       },
-      "vestal": {
-        "description": "Bot do Discord com uma variedade de comandos, baseado em Sapphire."
-      },
-      "template-products": {
-        "description": "Template para vender produtos, pronta para usar em qualquer contexto."
-      },
       "ascii": {
         "description": "Envie uma imagem e receba-a convertida em caracteres ASCII, com parâmetros configuráveis."
-      },
-      "cat": {
-        "description": "Bot do Discord para moderação."
       },
       "yask": {
         "description": "Cache flexível e leve para lidar com muita informação."

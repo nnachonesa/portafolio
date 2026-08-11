@@ -1,9 +1,7 @@
 export const projectIds = [
+  "gtaw-es",
   "akagi",
-  "vestal",
-  "template-products",
   "ascii",
-  "cat",
   "yask",
   "snowflake",
   "murasaki",
@@ -25,16 +23,16 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    id: "gtaw-es",
+    name: "GTAWorld FaceBrowser SDK",
+    tags: ["typescript", "gtaw", "facebrowser", "sdk"],
+    github: "https://github.com/nnachonesa/gtaworld-facebrowser-sdk",
+  },
+  {
     id: "akagi",
     name: "Akagi",
     tags: ["python", "speech", "ai", "openai"],
     github: "https://github.com/nnachonesa/Akagi",
-  },
-  {
-    id: "vestal",
-    name: "Vestal",
-    tags: ["typescript", "sapphire", "discord"],
-    github: "https://github.com/nnachonesa/Vestal",
   },
   {
     id: "ascii",
@@ -43,12 +41,6 @@ export const projects: Project[] = [
     github:
       "https://github.com/nnachonesa/nnachonesa.github.io/blob/master/projects/ascii.html",
     live: "https://nnachonesa.github.io/projects/ascii.html",
-  },
-  {
-    id: "cat",
-    name: "cat",
-    tags: ["typescript", "sapphire", "discord"],
-    github: "https://github.com/nnachonesa/cat",
   },
   {
     id: "yask",

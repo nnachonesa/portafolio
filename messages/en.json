@@ -27,20 +27,14 @@
     "code": "Code",
     "demo": "Demo",
     "items": {
+      "gtaw-es": {
+        "description": "An unofficial library for interacting with the GTA World FaceBrowser API in a simple and typed way."
+      },
       "akagi": {
         "description": "Speech recognition with Python: it transcribes to text, the AI interprets it and replies with voice."
       },
-      "vestal": {
-        "description": "Discord bot with a variety of commands, built on Sapphire."
-      },
-      "template-products": {
-        "description": "Template for selling products, ready to use in any context."
-      },
       "ascii": {
         "description": "Upload an image and get it back as ASCII characters, with configurable parameters."
-      },
-      "cat": {
-        "description": "Discord moderation bot."
       },
       "yask": {
         "description": "Flexible, lightweight cache for heavy data handling."
