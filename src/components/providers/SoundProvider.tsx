@@ -1,7 +1,6 @@
 "use client";
 
 import { type ReactNode, useEffect } from "react";
-
 import { playClick } from "@/lib/sound";
 
 export function SoundProvider({ children }: { children: ReactNode }) {
