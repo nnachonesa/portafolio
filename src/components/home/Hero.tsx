@@ -35,7 +35,6 @@ export function Hero() {
           >
             <h1 className="mt-6 text-4xl font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
               {t("titlePrefix")}{" "}
-
             </h1>
 
             <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
@@ -54,7 +53,6 @@ export function Hero() {
             className="relative"
           >
             <Parallax speed={0.6} className="relative">
-
               <div className="relative mx-auto w-full max-w-sm">
                 <div className="rounded-[2rem] bg-gradient-to-br from-grad-from/40 to-grad-to/25 p-1 shadow-glow">
                   <div className="overflow-hidden rounded-[calc(2rem-4px)] bg-card">

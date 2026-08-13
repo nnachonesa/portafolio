@@ -1,102 +1,65 @@
 {
-    "projects": [
-        {
-            "name": "GTAWorld FaceBrowser SDK",
-            "description": "Una librería no oficial para interactuar con la API del FaceBrowser de GTA World de forma sencilla y tipada.",
-            "tags": [
-                "typescript",
-                "gtaw",
-                "facebrowser",
-                "sdk"
-            ],
-            "html_url": "https://github.com/nnachonesa/gtaworld-facebrowser-sdk"
-        },
-        {
-            "name": "Akagi",
-            "description": "Este es un proyecto en cual se reconoce la voz por medio de una libreria de python luego esta se traduce a texto, la ia lo interpreta y lo devuelve por medio de voz.",
-            "tags": [
-                "python",
-                "speechrecognition",
-                "ai",
-                "openai"
-            ],
-            "html_url": "https://github.com/nnachonesa/Akagi"
-        },
-        {
-            "name": "Ascii Generator",
-            "description": "Una pagina web que subiendo una imagen te la devuelve pero en caracteres ascii, ademas de poder variar parametros",
-            "tags": [
-                "ascii"
-            ],
-            "html_url": "https://github.com/nnachonesa/nnachonesa.github.io/blob/master/projects/ascii.html",
-            "live_url": "https://nnachonesa.github.io/projects/ascii.html"
-        },
-        {
-            "name": "Yask",
-            "description": "Una cache flexible, no escalable que esta especificamente diseñada para la programacion que tenga mucho manejo de informacion y se pueda usar en cualquier contexto.",
-            "tags": [
-                "typescript",
-                "cache"
-            ],
-            "html_url": "https://github.com/nnachonesa/yask"
-        },
-        {
-            "name": "Snowflake",
-            "description": "Constructor y desconstructor de snowflakes. (id de 64 unica)",
-            "tags": [
-                "rust",
-                "binary"
-            ],
-            "html_url": "https://github.com/nnachonesa/snowflake"
-        },
-        {
-            "name": "Murasaki",
-            "description": "Un bot de whatsapp simple que envia memes sacados de reddit",
-            "tags": [
-                "typescript",
-                "whatsapp",
-                "bot"
-            ],
-            "html_url": "https://github.com/nnachonesa/Murasaki"
-        },
-        {
-            "name": "EcoMongo",
-            "description": "Una libreria para ts/js que ayuda a crear una economia simple",
-            "tags": [
-                "typescript",
-                "mongodb"
-            ],
-            "html_url": "https://github.com/nnachonesa/EcoMongo"
-        },
-        {
-            "name": "TempTasks",
-            "description": "Esta aplicación fue creada con la sencilla razón de guardar tareas temporales, su diseño es tan sencillo como rápido y fácil de aprender.",
-            "tags": [
-                "typescript",
-                "app",
-                "electron",
-                "pkg"
-            ],
-            "html_url": "https://github.com/nnachonesa/TempTasks"
-        },
-        {
-            "name": "handino",
-            "description": "El codigo fuente de una mano robotica que hice para el proyecto del cole.",
-            "tags": [
-                "arduino"
-            ],
-            "html_url": "https://github.com/nnachonesa/handino"
-        },
-        {
-            "name": "niko-openai",
-            "description": "Un bot de discord que usa gpt (davinci) para responder",
-            "tags": [
-                "javascript",
-                "ai",
-                "discord",
-                "bot"
-            ],
-            "html_url": "https://github.com/nnachonesa/niko-openai"
-        }
-    ]
+  "projects": [
+    {
+      "name": "GTAWorld FaceBrowser SDK",
+      "description": "Una librería no oficial para interactuar con la API del FaceBrowser de GTA World de forma sencilla y tipada.",
+      "tags": ["typescript", "gtaw", "facebrowser", "sdk"],
+      "html_url": "https://github.com/nnachonesa/gtaworld-facebrowser-sdk"
+    },
+    {
+      "name": "Akagi",
+      "description": "Este es un proyecto en cual se reconoce la voz por medio de una libreria de python luego esta se traduce a texto, la ia lo interpreta y lo devuelve por medio de voz.",
+      "tags": ["python", "speechrecognition", "ai", "openai"],
+      "html_url": "https://github.com/nnachonesa/Akagi"
+    },
+    {
+      "name": "Ascii Generator",
+      "description": "Una pagina web que subiendo una imagen te la devuelve pero en caracteres ascii, ademas de poder variar parametros",
+      "tags": ["ascii"],
+      "html_url": "https://github.com/nnachonesa/nnachonesa.github.io/blob/master/projects/ascii.html",
+      "live_url": "https://nnachonesa.github.io/projects/ascii.html"
+    },
+    {
+      "name": "Yask",
+      "description": "Una cache flexible, no escalable que esta especificamente diseñada para la programacion que tenga mucho manejo de informacion y se pueda usar en cualquier contexto.",
+      "tags": ["typescript", "cache"],
+      "html_url": "https://github.com/nnachonesa/yask"
+    },
+    {
+      "name": "Snowflake",
+      "description": "Constructor y desconstructor de snowflakes. (id de 64 unica)",
+      "tags": ["rust", "binary"],
+      "html_url": "https://github.com/nnachonesa/snowflake"
+    },
+    {
+      "name": "Murasaki",
+      "description": "Un bot de whatsapp simple que envia memes sacados de reddit",
+      "tags": ["typescript", "whatsapp", "bot"],
+      "html_url": "https://github.com/nnachonesa/Murasaki"
+    },
+    {
+      "name": "EcoMongo",
+      "description": "Una libreria para ts/js que ayuda a crear una economia simple",
+      "tags": ["typescript", "mongodb"],
+      "html_url": "https://github.com/nnachonesa/EcoMongo"
+    },
+    {
+      "name": "TempTasks",
+      "description": "Esta aplicación fue creada con la sencilla razón de guardar tareas temporales, su diseño es tan sencillo como rápido y fácil de aprender.",
+      "tags": ["typescript", "app", "electron", "pkg"],
+      "html_url": "https://github.com/nnachonesa/TempTasks"
+    },
+    {
+      "name": "handino",
+      "description": "El codigo fuente de una mano robotica que hice para el proyecto del cole.",
+      "tags": ["arduino"],
+      "html_url": "https://github.com/nnachonesa/handino"
+    },
+    {
+      "name": "niko-openai",
+      "description": "Un bot de discord que usa gpt (davinci) para responder",
+      "tags": ["javascript", "ai", "discord", "bot"],
+      "html_url": "https://github.com/nnachonesa/niko-openai"
+    }
+  ]
 }

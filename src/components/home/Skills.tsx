@@ -13,8 +13,9 @@ export async function Skills() {
         title={
           <>
             {t("titleStart")}{" "}
-           {  <span className="bg-gradient-to-r from-grad-from to-grad-to bg-clip-text text-transparent">
-            </span> }
+            {
+              <span className="bg-gradient-to-r from-grad-from to-grad-to bg-clip-text text-transparent"></span>
+            }
           </>
         }
       />
