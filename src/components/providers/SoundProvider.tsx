@@ -11,8 +11,7 @@ export function SoundProvider({ children }: { children: ReactNode }) {
 
       if (
         path.some(
-          (entry) =>
-            entry instanceof Element && entry.matches("a, button"),
+          (entry) => entry instanceof Element && entry.matches("a, button"),
         )
       ) {
         playClick();
